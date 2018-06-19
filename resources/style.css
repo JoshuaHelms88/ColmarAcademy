@@ -1,0 +1,174 @@
+html  {
+  font-family: Arial;
+  font-size: 16px;
+  background-color: whitesmoke;
+  color: hsl(0, 0%, 27%);
+}
+
+a  {
+  text-decoration: none;
+  decoration: none;
+}
+
+a:visited  {
+  text-decoration: none;
+  decoration: none;
+  color: hsl(0, 0%, 27%);
+}
+
+.mobile {
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.even {
+  background-color: lightgrey;
+}
+.odd {
+  background-color: whitesmoke;
+}
+
+h1  {
+  font-size: 3rem;
+  font-weight: 1000;
+  letter-spacing: -2px;
+}
+
+h3  {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+h4  {
+
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+header  {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 4rem;
+}
+
+.logo  {
+  font-size: 1.85rem;
+  color: slategrey;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.logo span strong  {
+  color: hsl(120, 0%, 25%);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+li  {
+  margin-right: 1rem;
+}
+
+li:last-child {
+  margin-right: 1.5rem;
+}
+
+.image{
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.start {
+  width: 27.5%;
+  margin: auto 1.5rem;
+}
+
+.button {
+  width: 100%;
+  background: hsl(0, 0%, 27%);
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: -3px 3px 3px darkgrey;
+}
+
+.button span {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.button:active  {
+  background: silver;
+  box-shadow: 0px 0px lightgrey;
+}
+
+.button:active span {
+  color: hsl(0, 0%, 27%);
+}
+
+#left {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+#left img {
+  width: 100%;
+  height: auto;
+}
+
+#left h1 {
+  margin-bottom: 1.5rem;
+}
+
+#left p , #left span {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#right {
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+.content img {
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.content:hover {
+  background-color: lightgrey;
+}
+
+.content  {
+  transition-duration: 400ms;
+  width: 100%;
+}
