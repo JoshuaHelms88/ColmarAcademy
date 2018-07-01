@@ -93,6 +93,10 @@ li:last-child {
   padding-right: 0;
 }
 
+li:hover{
+  color: lightgrey;
+}
+
 .image{
   width: 60%;
   height: auto;
@@ -123,6 +127,10 @@ li:last-child {
 .button span {
   font-size: 1.5rem;
   color: whitesmoke;
+}
+
+.button:hover {
+  background-color: gainsboro;
 }
 
 .button:active  {
@@ -169,7 +177,7 @@ li:last-child {
 }
 
 .content:hover {
-  background-color: lightgrey;
+  background-color: gainsboro;
 }
 
 .content  {
@@ -204,6 +212,10 @@ li:last-child {
   margin-bottom: 0.75rem
 }
 
+.learn:hover {
+  background-color: gainsboro;
+}
+
 .learn img {
   width: 100%;
 }
@@ -218,6 +230,10 @@ li:last-child {
   flex-direction: column;
 }
 
+.just {
+  align-items: flex-start;
+}
+
 .video {
   width: 55%;
   margin: 0 1.5rem;
@@ -229,4 +245,24 @@ video {
 
 .theses {
   width: 40%;
+  height: 100%;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: baseline;
+}
+
+.theses img {
+  width: 35%;
+  margin: 1rem;
+}
+
+.thesis:hover {
+  background-color: gainsboro;
+}
+
+footer  {
+  justify-content: space-between;
+  border-top: 2px solid lightgrey;
+  padding: 1rem 1.5rem;
+  width: 100%;
 }
