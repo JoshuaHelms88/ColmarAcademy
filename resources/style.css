@@ -1,3 +1,10 @@
+
+
+
+                        /* general */
+
+
+
 html  {
   font-family: Arial;
   font-size: 16px;
@@ -53,6 +60,12 @@ p {
   font-size: 1.25rem;
 }
 
+
+
+                        /* header */
+
+
+
 header  {
   display: flex;
   width: 100%;
@@ -79,6 +92,7 @@ ul {
   display: flex;
   list-style: none;
   font-size: 1.25rem;
+  margin-right: 1.5rem;
 }
 
 li  {
@@ -88,7 +102,6 @@ li  {
 }
 
 li:last-child {
-  margin-right: 1.5rem;
   border-right: none;
   padding-right: 0;
 }
@@ -96,6 +109,12 @@ li:last-child {
 li:hover{
   color: lightgrey;
 }
+
+
+
+                      /* Banner */
+
+
 
 .image{
   width: 60%;
@@ -131,6 +150,11 @@ li:hover{
 
 .button:hover {
   background-color: gainsboro;
+  cursor: pointer;
+}
+
+.button:hover span {
+  color: hsl(0, 0%, 27%);
 }
 
 .button:active  {
@@ -141,6 +165,12 @@ li:hover{
 .button:active span {
   color: hsl(0, 0%, 27%);
 }
+
+
+
+                              /* content */
+
+
 
 #left {
   width: 60%;
@@ -178,6 +208,11 @@ li:hover{
 
 .content:hover {
   background-color: gainsboro;
+  cursor: pointer;
+}
+
+.content:active {
+  background-color: silver;
 }
 
 .content  {
@@ -188,6 +223,12 @@ li:hover{
 .info{
   width: 65%;
 }
+
+
+
+                            /* learn */
+
+
 
 .learning {
   width: 100%;
@@ -214,6 +255,11 @@ li:hover{
 
 .learn:hover {
   background-color: gainsboro;
+  cursor: pointer;
+}
+
+.learn:active {
+  background-color: silver;
 }
 
 .learn img {
@@ -226,6 +272,12 @@ li:hover{
   justify-content: space-around;
 }
 
+
+
+                            /* exhibit */
+
+
+
 .exhibit {
   flex-direction: column;
 }
@@ -237,10 +289,15 @@ li:hover{
 .video {
   width: 55%;
   margin: 0 1.5rem;
+
 }
 
 video {
   width: 100%;
+}
+
+.video p {
+  padding-bottom: 2.5rem;
 }
 
 .theses {
@@ -258,11 +315,152 @@ video {
 
 .thesis:hover {
   background-color: gainsboro;
+  cursor: pointer;
 }
+
+.thesis:active {
+  background-color: silver;
+}
+
+
+
+                                    /* footer */
+
+
 
 footer  {
   justify-content: space-between;
-  border-top: 2px solid lightgrey;
+  border-top: 1.5px solid gainsboro;
   padding: 1rem 1.5rem;
   width: 100%;
+}
+
+
+                                    /* mobile */
+
+
+@media only screen and (max-width: 480px)  {
+
+
+
+                  /* general */
+
+
+
+  .mobile {
+    display: initial;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+
+
+                      /* banner */
+
+
+
+  #banner {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .start {
+    width: 90%;
+    margin: auto;
+  }
+
+  .button {
+    margin-bottom: 2rem;
+    box-shadow: none;
+  }
+
+
+
+                            /* content */
+
+
+
+  #right {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 2rem;
+    font-size: 16px;
+  }
+
+  .info h3 {
+    font-size: 2rem;
+    margin-bottom: -1rem;
+  }
+
+
+
+                          /* learn */
+
+
+
+  .subjects  {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .learn {
+    width: 90%;
+
+  }
+
+  .course {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+  }
+
+  .course h3 {
+    font-size: 2rem;
+  }
+
+
+
+                        /* exhibit */
+
+
+
+  .video {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
+
+                        /* footer */
+
+
+
+  footer {
+    border-top: 0;
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
 }
